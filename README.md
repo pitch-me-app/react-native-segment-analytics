@@ -1,9 +1,9 @@
 ## react-native-segment-analytics
 
 ### Install
- 
+
 ```
-$ npm install react-native-segment-analytics --save
+$ npm install @pitch-me/react-native-segment-analytics --save
 ```
 
 ### IOS (CocoaPods)
@@ -11,7 +11,7 @@ $ npm install react-native-segment-analytics --save
 ```
 pod 'Analytics'
 pod 'React', :path => '../node_modules/react-native'
-pod 'SegmentAnalytics', :path => '../node_modules/react-native-segment-analytics/ios'
+pod 'SegmentAnalytics', :path => '../node_modules/@pitch-me/react-native-segment-analytics/ios'
 ```
 
 #### Install the Cocoapods dependencies:
@@ -22,7 +22,7 @@ $ pod install
 
 ##### Headsup
 
-Make sure that you have `libAnalytics.a` and `libSegmentAnalytics.a` in your *Linked Frameworks and Libraries* 
+Make sure that you have `libAnalytics.a` and `libSegmentAnalytics.a` in your *Linked Frameworks and Libraries*
 You may have to import them manually.
 
 ![image](https://cloud.githubusercontent.com/assets/1058646/16497002/71f1f6ce-3eba-11e6-9a0d-6e2900d1afc2.png)
@@ -33,7 +33,7 @@ You may have to import them manually.
 
 ```
 include ':react-native-segment-analytics'
-project(':react-native-segment-analytics').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-segment-analytics/android')
+project(':react-native-segment-analytics').projectDir = new File(rootProject.projectDir, '../node_modules/@pitch-me/react-native-segment-analytics/android')
 ```
 
 #### Add in android/app/build.gradle
@@ -67,7 +67,7 @@ protected List<ReactPackage> getPackages() {
 import RNSegmentIO from 'react-native-segment-analytics';
 ```
 
-#### Set it up just ones inside your project 
+#### Set it up just ones inside your project
 
 ```
 RNSegmentIO.setup("YOUR-SEGMENT-KEY");
